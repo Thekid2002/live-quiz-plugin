@@ -1,5 +1,5 @@
-# Use the official PHP image with Apache
-FROM php:8.1-apache
+# Use the official PHP image with Apache, and specify the platform
+FROM --platform=linux/arm64 php:8.1-apache
 
 # Set the ServerName to suppress the warning
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
@@ -7,7 +7,7 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 # Set working directory in the container
 WORKDIR /var/www/html
 
-# Install necessary PHP extensions
+# Install necessary PHP extensions and dependencies
 RUN apt-get update && apt-get install -y \
     libzip-dev \
     zip \
