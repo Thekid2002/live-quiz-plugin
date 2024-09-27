@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  web:
+    image: kodomoheichou/moodle-latest-404-web:latest
+    container_name: moodle-web
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+    volumes:
+      - ./custom.ini:/usr/local/etc/php/conf.d/custom.ini
+
+  db:
+    image: postgres:16
+    container_name: moodle-postgres-db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=moodle
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=mysecretpassword
+    ports:
+      - "5432:5432"
+
+volumes:
+  postgres_data:
