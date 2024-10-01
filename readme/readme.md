@@ -11,7 +11,7 @@ docker-compose up
 After this two containers should be running
 <img src="dockerDesktop.28.16.png">
 
-\ 
+\
 \
 
 

@@ -10,6 +10,7 @@ services:
       - db
     volumes:
       - ./custom.ini:/usr/local/etc/php/conf.d/custom.ini
+      - ./livequiz:/var/www/html/moodle/mod/livequiz
 
   db:
     image: postgres:16
