@@ -1,5 +1,5 @@
 # Use the official PHP image with Apache, and specify the platform
-FROM --platform=linux/arm64 php:8.1-apache
+FROM php:8.1-apache
 
 # Set the ServerName to suppress the warning
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf

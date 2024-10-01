@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   web:
-    image: kodomoheichou/moodle-web:latest
+    build: .
     container_name: moodle-web
     ports:
       - "80:80"
