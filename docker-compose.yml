@@ -12,6 +12,7 @@ services:
       - db
     volumes:
       - ./custom.ini:/usr/local/etc/php/conf.d/custom.ini
+      #Remove this line for production testing
       - ./livequiz:/var/www/html/mod/livequiz
 
   db:
