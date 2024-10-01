@@ -2,7 +2,9 @@ version: '3.8'
 
 services:
   web:
-    image: kodomoheichou/moodle-web:latest
+    #For x64 architecture
+    #image: kodomoheichou/moodle-web:x64
+    image: kodomoheichou/moodle-web:arm
     container_name: moodle-web
     ports:
       - "80:80"
@@ -10,13 +12,15 @@ services:
       - db
     volumes:
       - ./custom.ini:/usr/local/etc/php/conf.d/custom.ini
-      - ./livequiz:/var/www/html/moodle/mod/livequiz
+      #Remove this line for production testing
+      - ./livequiz:/var/www/html/mod/livequiz
 
   db:
     image: postgres:16
     container_name: moodle-postgres-db
     volumes:
       - postgres_data:/var/lib/postgresql/data
+      - ./initdb.sql:/docker-entrypoint-initdb.d/initdb.sql
     environment:
       - POSTGRES_DB=moodle
       - POSTGRES_USER=postgres
