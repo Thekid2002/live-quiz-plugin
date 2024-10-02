@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 16.4 (Debian 16.4-1.pgdg120+1)
+-- Dumped from database version 16.4 (Debian 16.4-1.pgdg120+2)
 -- Dumped by pg_dump version 16.4 (Homebrew)
 
 SET statement_timeout = 0;
@@ -26956,7 +26956,8 @@ COPY public.mdl_cache_filters (id, filter, version, md5key, rawtext, timemodifie
 --
 
 COPY public.mdl_cache_flags (id, flagtype, name, timemodified, value, expiry) FROM stdin;
-1	userpreferenceschanged	2	1727789617	1	1727818417
+1	userpreferenceschanged	2	1727850135	1	1727878935
+2	accesslib/dirtyusers	2	1727850148	1	1727878948
 \.
 
 
@@ -30739,6 +30740,14 @@ COPY public.mdl_config_plugins (id, plugin, name, value) FROM stdin;
 390	message	airnotifier_provider_moodle_backup_locked	0
 391	message	airnotifier_provider_moodle_courserequested_locked	0
 392	message	airnotifier_provider_moodle_courserequestapproved_locked	0
+1139	mod_lesson	modattempts	0
+1140	mod_lesson	modattempts_adv	
+1141	mod_lesson	displayreview	0
+1142	mod_lesson	displayreview_adv	
+1143	mod_lesson	maximumnumberofattempts	1
+1144	mod_lesson	maximumnumberofattempts_adv	
+1145	mod_lesson	defaultnextpage	0
+1146	mod_lesson	defaultnextpage_adv	1
 292	mod_lti	privatekey	-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDSDHaN2yNq3Asd\nki7QlXvMPSyKMEXFKbjwVeFiVgodMR+wHLb4hW7g/w6hqVn77dMY/uhl8xga+tGA\nljRrIJARL1PCUVejjuhQaVyQwjENLcv32H6MjefegKRhPRjEI6076/zioa/Hf64l\nlF2lmuKI5dGfqRGAxv5sWMXQLShfVmeJL+pyQmqA/rAc35FZ3Q5IgPAC8sAWSH8v\nnER6jTMUi56LH8eAV+Nm3c+18zCjfU9LdXjCnE+p8p0jyn+mLAg1aCfNwAC3VvzC\nFHxptb8RkndeKDQrd2bSxuoTuiP/5QXpLJhN/tBA6mI4zlqOuTfXyGGKhCJP1xe+\nlqYUihqpAgMBAAECggEAD5TQGI7Ibk1bX7qv0VY9ZDWnf6q8CjehmeZs/SvvvSGf\nPaOrqPzQ8EzLS4+x9p+6OJD0MVfakmnHr7e0tLuqJDQ0DOaWzzGzJv/h13UoSVd7\n2WtMW+XM7PLy/qmXFDmnSJolXLRswypEA1Khrb6zDj+qEKNsgnaAeg4NwncPFx9B\n0KnEZ0jI6lkCpF2Wnx59rFQ16lEQPvOBh7C9QW7rIDziqvLgBompA2YRj2shDPDG\njozbaDsT3dzT6tJ1staF1lskOxGna2oZWZ3vUlIipH5F+0I0E++dK3uJJcuIzVHC\ncJkXUxHsCn5SnJJPoLqDijmWQAqJRjEN+cQuqznflwKBgQDoA/C/OSoweedpjBCT\nuQCEiyzgcRWievPFfbFTz5J4tYh/V6HeFDyGPtz+JzZfvdxL1VDJM+vchnv5XtGK\nZd6a9tt5Sc4OJZgce9c+dZKD3g/WDIDPrkWLYccnh0y2c2k0HtN2z2oiuyaZArg/\ntf1vzh8ARP6x8CyhkBvuF3qoAwKBgQDnwzIAK//BlyR+VnNdiQBN4EzBNlgYvC07\nfPtLIFiq/JD2gTa3+vyA1FMFWRhCZibK/oiiVd8S6HL91YpEuUYmjnXMBP2+YYkf\nvjT6U5VsZ2joYU9h2UjdCttW8xNt31a78dBu3itoR+XnO3YriY3FGkTNouVyBTvR\nKKb7UUJg4wKBgQC8W36Wb709j6n8ORa4Jsgx0p9DMutidjjzSwCsTubVkmLXJvil\nR35/ageVWZY+EfAHrI0iW0GPTarWH1Ez71HSMrio9e8P8xtTfIKZFXA2GBB5MLte\nX1fcOSwqfiAcOwPcqW35lZfPzGogbGHSb1fp7cejO2AeayKAo3LZTzxnqwKBgQDD\nIDNTs7ejvOXLvGtq37Ky3lqg/WkUgjIu+J319WjRpM1DzSxNn/HBYYH4abekB683\njy9oRZYHrE9MaOH91GM8iQqiV71u8V1qrVCbRY3zc+j+ZRdZkX/oIoDi5sp/4d57\nZC8ReNng9U+Z7BUkuK30uZYd77zvz3o6MdjMlPCm8wKBgCsax8VcoVLEeXf+mHu2\n59Ineqs/7+oNxAhGILtfP0uvvhCHUWxDeKvoeFNskEe72YlM8xQoK/RlXuzHY9iV\n1IL0kie9YjHqMVxjzYfI6Si2N659l+gpVdE2+sb7WmzsItEO8OkzY9HlUL/a2sxx\n9k4OgrPFrnXinzF8Zur3qsc5\n-----END PRIVATE KEY-----\n
 293	mod_page	version	2024042200
 295	mod_quiz	version	2024042200
@@ -31492,14 +31501,6 @@ COPY public.mdl_config_plugins (id, plugin, name, value) FROM stdin;
 1136	mod_lesson	timelimit_adv	
 1137	mod_lesson	password	0
 1138	mod_lesson	password_adv	1
-1139	mod_lesson	modattempts	0
-1140	mod_lesson	modattempts_adv	
-1141	mod_lesson	displayreview	0
-1142	mod_lesson	displayreview_adv	
-1143	mod_lesson	maximumnumberofattempts	1
-1144	mod_lesson	maximumnumberofattempts_adv	
-1145	mod_lesson	defaultnextpage	0
-1146	mod_lesson	defaultnextpage_adv	1
 1147	mod_lesson	numberofpagestoshow	1
 1148	mod_lesson	numberofpagestoshow_adv	1
 1149	mod_lesson	practice	0
@@ -32500,6 +32501,8 @@ COPY public.mdl_context (id, contextlevel, instanceid, path, depth, locked) FROM
 11	80	6	/1/5/11	3	0
 12	80	7	/1/5/12	3	0
 13	80	8	/1/5/13	3	0
+14	50	2	/1/3/14	3	0
+15	70	1	/1/3/14/15	4	0
 \.
 
 
@@ -32516,7 +32519,8 @@ COPY public.mdl_context_temp (id, path, depth, locked) FROM stdin;
 --
 
 COPY public.mdl_course (id, category, sortorder, fullname, shortname, idnumber, summary, summaryformat, format, showgrades, newsitems, startdate, enddate, relativedatesmode, marker, maxbytes, legacyfiles, showreports, visible, visibleold, downloadcontent, groupmode, groupmodeforce, defaultgroupingid, lang, calendartype, theme, timecreated, timemodified, requested, enablecompletion, completionnotify, cacherev, originalcourseid, showactivitydates, showcompletionconditions, pdfexportfont) FROM stdin;
-1	0	0	Moodle P5 Multi-Project	MoodleP5			0	site	1	3	0	0	0	0	0	0	0	1	1	\N	0	0	0				1727789520	1727789611	0	0	0	1727789546	\N	0	\N	\N
+1	0	1	Moodle P5 Multi-Project	MoodleP5			0	site	1	3	0	0	0	0	0	0	0	1	1	\N	0	0	0				1727789520	1727789611	0	0	0	1727789546	\N	0	\N	\N
+2	1	10001	Test	test			1	topics	1	5	1727910000	1759446000	0	0	0	0	0	1	1	\N	0	0	0				1727850148	1727850148	0	1	0	1727850154	\N	1	1	\N
 \.
 
 
@@ -32525,7 +32529,7 @@ COPY public.mdl_course (id, category, sortorder, fullname, shortname, idnumber, 
 --
 
 COPY public.mdl_course_categories (id, name, idnumber, description, descriptionformat, parent, sortorder, coursecount, visible, visibleold, timemodified, depth, path, theme) FROM stdin;
-1	Category 1	\N	\N	1	0	10000	0	1	1	1727789520	1	/1	\N
+1	Category 1	\N	\N	1	0	10000	1	1	1	1727789520	1	/1	\N
 \.
 
 
@@ -32575,6 +32579,8 @@ COPY public.mdl_course_completions (id, userid, course, timeenrolled, timestarte
 
 COPY public.mdl_course_format_options (id, courseid, format, sectionid, name, value) FROM stdin;
 1	1	site	0	numsections	1
+2	2	topics	0	hiddensections	1
+3	2	topics	0	coursedisplay	0
 \.
 
 
@@ -32583,6 +32589,7 @@ COPY public.mdl_course_format_options (id, courseid, format, sectionid, name, va
 --
 
 COPY public.mdl_course_modules (id, course, module, instance, section, idnumber, added, score, indent, visible, visibleoncoursepage, visibleold, groupmode, groupingid, completion, completiongradeitemnumber, completionview, completionexpected, completionpassgrade, showdescription, availability, deletioninprogress, downloadcontent, lang) FROM stdin;
+1	2	9	1	1	\N	1727850148	0	0	1	1	1	0	0	0	\N	0	0	0	0	\N	0	1	\N
 \.
 
 
@@ -32623,6 +32630,11 @@ COPY public.mdl_course_request (id, fullname, shortname, summary, summaryformat,
 --
 
 COPY public.mdl_course_sections (id, course, section, name, summary, summaryformat, sequence, visible, availability, component, itemid, timemodified) FROM stdin;
+1	2	0	\N		1	1	1	\N	\N	\N	1727850148
+2	2	1	\N		1		1	\N	\N	\N	1727850148
+3	2	2	\N		1		1	\N	\N	\N	1727850148
+4	2	3	\N		1		1	\N	\N	\N	1727850148
+5	2	4	\N		1		1	\N	\N	\N	1727850148
 \.
 
 
@@ -32695,6 +32707,9 @@ COPY public.mdl_editor_atto_autosave (id, elementid, contextid, pagehash, userid
 --
 
 COPY public.mdl_enrol (id, enrol, status, courseid, sortorder, name, enrolperiod, enrolstartdate, enrolenddate, expirynotify, expirythreshold, notifyall, password, cost, currency, roleid, customint1, customint2, customint3, customint4, customint5, customint6, customint7, customint8, customchar1, customchar2, customchar3, customdec1, customdec2, customtext1, customtext2, customtext3, customtext4, timecreated, timemodified) FROM stdin;
+1	manual	0	2	0	\N	0	0	0	0	86400	0	\N	\N	\N	5	1	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	1727850148	1727850148
+2	guest	1	2	1	\N	0	0	0	0	0	0		\N	\N	0	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	1727850148	1727850148
+3	self	1	2	2	\N	0	0	0	0	86400	0	\N	\N	\N	5	0	0	0	1	0	1	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	1727850148	1727850148
 \.
 
 
@@ -34218,6 +34233,7 @@ COPY public.mdl_folder (id, course, name, intro, introformat, revision, timemodi
 --
 
 COPY public.mdl_forum (id, course, type, name, intro, introformat, duedate, cutoffdate, assessed, assesstimestart, assesstimefinish, scale, grade_forum, grade_forum_notify, maxbytes, maxattachments, forcesubscribe, trackingtype, rsstype, rssarticles, timemodified, warnafter, blockafter, blockperiod, completiondiscussions, completionreplies, completionposts, displaywordcount, lockdiscussionafter) FROM stdin;
+1	2	news	Announcements	General news and announcements	1	0	0	0	0	0	0	0	0	0	1	1	1	0	0	1727850148	0	0	0	0	0	0	0	0
 \.
 
 
@@ -35209,6 +35225,7 @@ COPY public.mdl_logstore_standard_log (id, eventname, component, action, target,
 249	\\core\\event\\config_log_created	core	created	config_log	config_log	900	c	0	1	10	0	2	0	\N	0	a:4:{s:4:"name";s:12:"password_adv";s:8:"oldvalue";N;s:5:"value";s:1:"1";s:6:"plugin";s:10:"mod_lesson";}	1727789575	web	0:0:0:0:0:0:0:1	\N
 250	\\core\\event\\config_log_created	core	created	config_log	config_log	901	c	0	1	10	0	2	0	\N	0	a:4:{s:4:"name";s:11:"modattempts";s:8:"oldvalue";N;s:5:"value";s:1:"0";s:6:"plugin";s:10:"mod_lesson";}	1727789575	web	0:0:0:0:0:0:0:1	\N
 251	\\core\\event\\config_log_created	core	created	config_log	config_log	902	c	0	1	10	0	2	0	\N	0	a:4:{s:4:"name";s:15:"modattempts_adv";s:8:"oldvalue";N;s:5:"value";s:0:"";s:6:"plugin";s:10:"mod_lesson";}	1727789575	web	0:0:0:0:0:0:0:1	\N
+1261	\\core\\event\\user_loggedin	core	loggedin	user	user	2	r	0	1	10	0	2	0	\N	0	{"username":"admin","extrauserinfo":[]}	1727850135	web	192.168.65.1	\N
 252	\\core\\event\\config_log_created	core	created	config_log	config_log	903	c	0	1	10	0	2	0	\N	0	a:4:{s:4:"name";s:13:"displayreview";s:8:"oldvalue";N;s:5:"value";s:1:"0";s:6:"plugin";s:10:"mod_lesson";}	1727789575	web	0:0:0:0:0:0:0:1	\N
 253	\\core\\event\\config_log_created	core	created	config_log	config_log	904	c	0	1	10	0	2	0	\N	0	a:4:{s:4:"name";s:17:"displayreview_adv";s:8:"oldvalue";N;s:5:"value";s:0:"";s:6:"plugin";s:10:"mod_lesson";}	1727789575	web	0:0:0:0:0:0:0:1	\N
 254	\\core\\event\\config_log_created	core	created	config_log	config_log	905	c	0	1	10	0	2	0	\N	0	a:4:{s:4:"name";s:23:"maximumnumberofattempts";s:8:"oldvalue";N;s:5:"value";s:1:"1";s:6:"plugin";s:10:"mod_lesson";}	1727789575	web	0:0:0:0:0:0:0:1	\N
@@ -35234,6 +35251,7 @@ COPY public.mdl_logstore_standard_log (id, eventname, component, action, target,
 274	\\core\\event\\config_log_created	core	created	config_log	config_log	925	c	0	1	10	0	2	0	\N	0	a:4:{s:4:"name";s:10:"popupwidth";s:8:"oldvalue";N;s:5:"value";s:3:"620";s:6:"plugin";s:4:"page";}	1727789575	web	0:0:0:0:0:0:0:1	\N
 275	\\core\\event\\config_log_created	core	created	config_log	config_log	926	c	0	1	10	0	2	0	\N	0	a:4:{s:4:"name";s:11:"popupheight";s:8:"oldvalue";N;s:5:"value";s:3:"450";s:6:"plugin";s:4:"page";}	1727789575	web	0:0:0:0:0:0:0:1	\N
 276	\\core\\event\\config_log_created	core	created	config_log	config_log	927	c	0	1	10	0	2	0	\N	0	a:4:{s:4:"name";s:9:"timelimit";s:8:"oldvalue";N;s:5:"value";s:1:"0";s:6:"plugin";s:4:"quiz";}	1727789575	web	0:0:0:0:0:0:0:1	\N
+1262	\\core\\event\\mycourses_viewed	core	viewed	mycourses	\N	\N	r	0	1	10	0	2	0	\N	0	null	1727850136	web	192.168.65.1	\N
 277	\\core\\event\\config_log_created	core	created	config_log	config_log	928	c	0	1	10	0	2	0	\N	0	a:4:{s:4:"name";s:13:"timelimit_adv";s:8:"oldvalue";N;s:5:"value";s:0:"";s:6:"plugin";s:4:"quiz";}	1727789575	web	0:0:0:0:0:0:0:1	\N
 278	\\core\\event\\config_log_created	core	created	config_log	config_log	929	c	0	1	10	0	2	0	\N	0	a:4:{s:4:"name";s:16:"timelimit_locked";s:8:"oldvalue";N;s:5:"value";s:0:"";s:6:"plugin";s:4:"quiz";}	1727789575	web	0:0:0:0:0:0:0:1	\N
 279	\\core\\event\\config_log_created	core	created	config_log	config_log	930	c	0	1	10	0	2	0	\N	0	a:4:{s:4:"name";s:24:"notifyattemptgradeddelay";s:8:"oldvalue";N;s:5:"value";s:5:"18000";s:6:"plugin";s:4:"quiz";}	1727789575	web	0:0:0:0:0:0:0:1	\N
@@ -36217,6 +36235,22 @@ COPY public.mdl_logstore_standard_log (id, eventname, component, action, target,
 1257	\\core\\event\\config_log_created	core	created	config_log	config_log	1908	c	0	1	10	0	2	0	\N	0	{"name":"noreplyaddress","oldvalue":null,"value":"","plugin":null}	1727789611	web	0:0:0:0:0:0:0:1	\N
 1258	\\core\\event\\config_log_created	core	created	config_log	config_log	1909	c	0	1	10	0	2	0	\N	0	{"name":"supportemail","oldvalue":null,"value":"tsan22@student.aau.dk","plugin":null}	1727789616	web	0:0:0:0:0:0:0:1	\N
 1260	\\tool_usertours\\event\\tour_started	tool_usertours	started	tour	tool_usertours_tours	5	r	2	5	30	2	2	0	2	0	{"pageurl":"http:\\/\\/localhost:4080\\/my\\/"}	1727789617	web	0:0:0:0:0:0:0:1	\N
+1263	\\tool_usertours\\event\\tour_started	tool_usertours	started	tour	tool_usertours_tours	4	r	2	1	10	0	2	0	\N	0	{"pageurl":"http:\\/\\/localhost\\/my\\/courses.php"}	1727850136	web	192.168.65.1	\N
+1264	\\core\\event\\course_created	core	created	course	course	2	c	1	14	50	2	2	2	\N	0	{"shortname":"test","fullname":"Test"}	1727850148	web	192.168.65.1	\N
+1265	\\core\\event\\course_section_created	core	created	course_section	course_sections	1	c	1	14	50	2	2	2	\N	0	{"sectionnum":0}	1727850148	web	192.168.65.1	\N
+1266	\\core\\event\\course_section_created	core	created	course_section	course_sections	2	c	1	14	50	2	2	2	\N	0	{"sectionnum":1}	1727850148	web	192.168.65.1	\N
+1267	\\core\\event\\course_section_created	core	created	course_section	course_sections	3	c	1	14	50	2	2	2	\N	0	{"sectionnum":2}	1727850148	web	192.168.65.1	\N
+1268	\\core\\event\\course_section_created	core	created	course_section	course_sections	4	c	1	14	50	2	2	2	\N	0	{"sectionnum":3}	1727850148	web	192.168.65.1	\N
+1269	\\core\\event\\course_section_created	core	created	course_section	course_sections	5	c	1	14	50	2	2	2	\N	0	{"sectionnum":4}	1727850148	web	192.168.65.1	\N
+1270	\\core\\event\\enrol_instance_created	core	created	enrol_instance	enrol	1	c	0	14	50	2	2	2	\N	0	{"enrol":"manual"}	1727850148	web	192.168.65.1	\N
+1271	\\core\\event\\enrol_instance_created	core	created	enrol_instance	enrol	2	c	0	14	50	2	2	2	\N	0	{"enrol":"guest"}	1727850148	web	192.168.65.1	\N
+1272	\\core\\event\\enrol_instance_created	core	created	enrol_instance	enrol	3	c	0	14	50	2	2	2	\N	0	{"enrol":"self"}	1727850148	web	192.168.65.1	\N
+1273	\\core\\event\\user_enrolment_created	core	created	user_enrolment	user_enrolments	1	c	0	14	50	2	2	2	2	0	{"enrol":"manual"}	1727850148	web	192.168.65.1	\N
+1274	\\core\\event\\role_assigned	core	assigned	role	role	3	c	0	14	50	2	2	2	2	0	{"id":1,"component":"","itemid":0}	1727850148	web	192.168.65.1	\N
+1275	\\core\\event\\course_viewed	core	viewed	course	\N	\N	r	2	14	50	2	2	2	\N	0	null	1727850148	web	192.168.65.1	\N
+1276	\\tool_usertours\\event\\tour_started	tool_usertours	started	tour	tool_usertours_tours	3	r	2	14	50	2	2	2	\N	0	{"pageurl":"http:\\/\\/localhost\\/course\\/view.php?id=2"}	1727850148	web	192.168.65.1	\N
+1277	\\core\\event\\mycourses_viewed	core	viewed	mycourses	\N	\N	r	0	1	10	0	2	0	\N	0	null	1727850153	web	192.168.65.1	\N
+1278	\\tool_usertours\\event\\tour_started	tool_usertours	started	tour	tool_usertours_tours	4	r	2	1	10	0	2	0	\N	0	{"pageurl":"http:\\/\\/localhost\\/my\\/courses.php"}	1727850153	web	192.168.65.1	\N
 \.
 
 
@@ -37550,6 +37584,7 @@ COPY public.mdl_role_allow_view (id, roleid, allowview) FROM stdin;
 --
 
 COPY public.mdl_role_assignments (id, roleid, contextid, userid, timemodified, modifierid, component, itemid, sortorder) FROM stdin;
+1	3	14	2	1727850148	2		0	0
 \.
 
 
@@ -39230,6 +39265,7 @@ COPY public.mdl_search_simpledb_index (id, docid, itemid, title, content, contex
 
 COPY public.mdl_sessions (id, state, sid, userid, sessdata, timecreated, timemodified, firstip, lastip) FROM stdin;
 2	0	5fuj5bbvnu0vv5g8i6uhq0ksgr	2	\N	1727789550	1727789608	0:0:0:0:0:0:0:1	0:0:0:0:0:0:0:1
+4	0	682ba55efa926001fdeb2d74112a5b05	2	\N	1727850135	1727850136	192.168.65.1	192.168.65.1
 \.
 
 
@@ -41280,7 +41316,7 @@ COPY public.mdl_url (id, course, name, intro, introformat, externalurl, display,
 
 COPY public.mdl_user (id, auth, confirmed, policyagreed, deleted, suspended, mnethostid, username, password, idnumber, firstname, lastname, email, emailstop, phone1, phone2, institution, department, address, city, country, lang, calendartype, theme, timezone, firstaccess, lastaccess, lastlogin, currentlogin, lastip, secret, picture, description, descriptionformat, mailformat, maildigest, maildisplay, autosubscribe, trackforums, timecreated, timemodified, trustbitmask, imagealt, lastnamephonetic, firstnamephonetic, middlename, alternatename, moodlenetprofile) FROM stdin;
 1	manual	1	0	0	0	1	guest	$6$rounds=10000$LVq3qeXT7esctbBR$Lf9j5WWDiRHIXs4XNFSn7d13NPDMJJAVOjUV/gYdV1u8RMRaUyJBRpOh7dTMWiAbcp9/Q7hZRhnuMdDQ2mmQW1		Guest user	 	root@localhost	0								en	gregorian		99	0	0	0	0			0	This user is a special user that allows read-only access to some courses.	1	1	0	2	1	0	0	1727789520	0	\N	\N	\N	\N	\N	\N
-2	manual	1	0	0	0	1	admin	$6$rounds=10000$NUq6U/1ov3Ksacon$39fS8Mf47wQ/pO99YxsOWOs7dhNGn2W8GeBXBwSUvNREi1ElEcgfn6wra8j7ElaECjN4s5bU4H/3SksfUgfV6.		Admin	User	tsan22@student.aau.dk	0								en	gregorian		99	1727789550	1727789611	0	1727789550	0:0:0:0:0:0:0:1		0		1	1	0	1	1	0	0	1727789574	0	\N					\N
+2	manual	1	0	0	0	1	admin	$6$rounds=10000$NUq6U/1ov3Ksacon$39fS8Mf47wQ/pO99YxsOWOs7dhNGn2W8GeBXBwSUvNREi1ElEcgfn6wra8j7ElaECjN4s5bU4H/3SksfUgfV6.		Admin	User	tsan22@student.aau.dk	0								en	gregorian		99	1727789550	1727850135	1727789550	1727850135	192.168.65.1		0		1	1	0	1	1	0	0	1727789574	0	\N					\N
 \.
 
 
@@ -41297,6 +41333,7 @@ COPY public.mdl_user_devices (id, userid, appid, name, model, platform, version,
 --
 
 COPY public.mdl_user_enrolments (id, status, enrolid, userid, timestart, timeend, modifierid, timecreated, timemodified) FROM stdin;
+1	0	1	2	0	0	2	1727850148	1727850148
 \.
 
 
@@ -41329,6 +41366,7 @@ COPY public.mdl_user_info_field (id, shortname, name, datatype, description, des
 --
 
 COPY public.mdl_user_lastaccess (id, userid, courseid, timeaccess) FROM stdin;
+1	2	2	1727850148
 \.
 
 
@@ -42005,7 +42043,7 @@ SELECT pg_catalog.setval('public.mdl_cache_filters_id_seq', 1, false);
 -- Name: mdl_cache_flags_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.mdl_cache_flags_id_seq', 1, true);
+SELECT pg_catalog.setval('public.mdl_cache_flags_id_seq', 2, true);
 
 
 --
@@ -42257,7 +42295,7 @@ SELECT pg_catalog.setval('public.mdl_contentbank_content_id_seq', 1, false);
 -- Name: mdl_context_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.mdl_context_id_seq', 13, true);
+SELECT pg_catalog.setval('public.mdl_context_id_seq', 15, true);
 
 
 --
@@ -42306,14 +42344,14 @@ SELECT pg_catalog.setval('public.mdl_course_completions_id_seq', 1, false);
 -- Name: mdl_course_format_options_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.mdl_course_format_options_id_seq', 1, true);
+SELECT pg_catalog.setval('public.mdl_course_format_options_id_seq', 3, true);
 
 
 --
 -- Name: mdl_course_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.mdl_course_id_seq', 2, false);
+SELECT pg_catalog.setval('public.mdl_course_id_seq', 2, true);
 
 
 --
@@ -42327,7 +42365,7 @@ SELECT pg_catalog.setval('public.mdl_course_modules_completion_id_seq', 1, false
 -- Name: mdl_course_modules_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.mdl_course_modules_id_seq', 1, false);
+SELECT pg_catalog.setval('public.mdl_course_modules_id_seq', 1, true);
 
 
 --
@@ -42355,7 +42393,7 @@ SELECT pg_catalog.setval('public.mdl_course_request_id_seq', 1, false);
 -- Name: mdl_course_sections_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.mdl_course_sections_id_seq', 1, false);
+SELECT pg_catalog.setval('public.mdl_course_sections_id_seq', 5, true);
 
 
 --
@@ -42425,7 +42463,7 @@ SELECT pg_catalog.setval('public.mdl_enrol_flatfile_id_seq', 1, false);
 -- Name: mdl_enrol_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.mdl_enrol_id_seq', 1, false);
+SELECT pg_catalog.setval('public.mdl_enrol_id_seq', 3, true);
 
 
 --
@@ -42747,7 +42785,7 @@ SELECT pg_catalog.setval('public.mdl_forum_grades_id_seq', 1, false);
 -- Name: mdl_forum_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.mdl_forum_id_seq', 1, false);
+SELECT pg_catalog.setval('public.mdl_forum_id_seq', 1, true);
 
 
 --
@@ -43181,7 +43219,7 @@ SELECT pg_catalog.setval('public.mdl_log_queries_id_seq', 1, false);
 -- Name: mdl_logstore_standard_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.mdl_logstore_standard_log_id_seq', 1260, true);
+SELECT pg_catalog.setval('public.mdl_logstore_standard_log_id_seq', 1278, true);
 
 
 --
@@ -44140,7 +44178,7 @@ SELECT pg_catalog.setval('public.mdl_role_allow_view_id_seq', 24, true);
 -- Name: mdl_role_assignments_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.mdl_role_assignments_id_seq', 1, false);
+SELECT pg_catalog.setval('public.mdl_role_assignments_id_seq', 1, true);
 
 
 --
@@ -44294,7 +44332,7 @@ SELECT pg_catalog.setval('public.mdl_search_simpledb_index_id_seq', 1, false);
 -- Name: mdl_sessions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.mdl_sessions_id_seq', 2, true);
+SELECT pg_catalog.setval('public.mdl_sessions_id_seq', 4, true);
 
 
 --
@@ -44427,7 +44465,7 @@ SELECT pg_catalog.setval('public.mdl_task_scheduled_id_seq', 111, true);
 -- Name: mdl_tiny_autosave_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.mdl_tiny_autosave_id_seq', 1, true);
+SELECT pg_catalog.setval('public.mdl_tiny_autosave_id_seq', 2, true);
 
 
 --
@@ -44714,7 +44752,7 @@ SELECT pg_catalog.setval('public.mdl_user_devices_id_seq', 1, false);
 -- Name: mdl_user_enrolments_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.mdl_user_enrolments_id_seq', 1, false);
+SELECT pg_catalog.setval('public.mdl_user_enrolments_id_seq', 1, true);
 
 
 --
@@ -44749,7 +44787,7 @@ SELECT pg_catalog.setval('public.mdl_user_info_field_id_seq', 1, false);
 -- Name: mdl_user_lastaccess_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.mdl_user_lastaccess_id_seq', 1, false);
+SELECT pg_catalog.setval('public.mdl_user_lastaccess_id_seq', 1, true);
 
 
 --
